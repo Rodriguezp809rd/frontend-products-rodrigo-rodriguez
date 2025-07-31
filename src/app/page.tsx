@@ -44,9 +44,16 @@ export default function HomePage() {
     fetchData();
   }, [currentPage, perPage]);
 
-  const filteredProducts = products.filter((product) =>
-    product.name.toLowerCase().includes(search.toLowerCase())
+  const filteredProducts = products.filter((product) => {
+  const query = search.toLowerCase();
+  return (
+    product.name.toLowerCase().includes(query) ||
+    product.description.toLowerCase().includes(query) ||
+    product.date_release.toLowerCase().includes(query) ||
+    product.date_revision.toLowerCase().includes(query)
   );
+});
+
 
   const productsToRender = search ? filteredProducts : products;
 
