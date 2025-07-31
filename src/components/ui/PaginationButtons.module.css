@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+  justify-content: center;
+}
+
+.pageButton {
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  font-weight: normal;
+  transition: all 0.2s ease;
+}
+
+.active {
+  background-color: #fadb14;
+  font-weight: bold;
+}
+
+.navButton {
+  padding: 6px 12px;
+  background-color: #fdd835;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.navButton:disabled {
+  background-color: #ccc;
+  cursor: default;
+}

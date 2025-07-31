@@ -1,0 +1,23 @@
+.tableWrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.headerRow {
+  background-color: #f2f2f2;
+}
+
+th {
+  padding: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  border-bottom: 2px solid #ccc;
+  color: #333;
+}
